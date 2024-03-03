@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Widgets</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    @keyframes colorChange {
+      0% { color: #ff0000; } /* Start color (red) */
+      25% { color: #00ff00; } /* Quarter-way color (green) */
+      50% { color: #0000ff; } /* Midway color (blue) */
+      75% { color: #ff00ff; } /* Three-quarter-way color (magenta) */
+      100% { color: #ff0000; } /* End color (red) */
+    }
+
+    .title {
+      animation: colorChange 5s infinite; /* Change '5s' to the duration you want */
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="title-container">
+  <a href="https://anshbooks.weebly.com" target="_blank">
+    <h2 class="title">Ansh Books</h2>
+  </a>
+</div>
+
+   <div class="container">
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxrMWCETUzrZskkwqOywiZZ-xjKNjqR5YQ">
+        <img src="https://yt3.ggpht.com/QmOh6k_ZGzzJIoihzXuVNB-1xXBMl6FXf2bwD0erSm1At7eW7s72O-XVZD5adhMzlgF5p3QndZ2A" alt="Image 1">
+        <p>8 Ball Billiards Classic (Sports)</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxoat5BdVauZ_vZ9LDhLOIdTDGNsP9XfOM">
+        <img src="https://yt3.ggpht.com/_za1Q9psMrzZg-rMcuhdBHDs0tnHvSye80iOoWSUVfPXqNjBDDMmBE2NBTHy-PdqOO84JkNlRcfeznc" alt="Image 2">
+        <p>Alien Shooter (Action)</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    
+    <!-- Add more widget divs as needed -->
+
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxUoLrmZDFP9DVVq0Jb4Ty3Afx80bBUovv">
+        <img src="https://yt3.ggpht.com/u8pbGLdaNniDDAi1nDDEo-DrBzYT1QOj6qN49-OcmAQ4y2tDnUEaU8bwXzus3A0Jhd2oujrMw_QI" alt="Image 3">
+        <p>AMAZE!
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxb2gxwOZu9QDqSZymy8YWhn_NJbg2BQXH">
+        <img src="https://yt3.ggpht.com/PyffqcYSfUz7tMMEm_4h-N5tqt87GnwkzurI7nBBWb3tzEN9BOekJALiSkOY2Zrm2zuL1GyMblA_9Kk" alt="Image 4">
+        <p>Angry Birds Showdown
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    
+    <!-- Add more widget divs as needed -->
+
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxWSXS6lpJJk8UXStO2_gBWymmyo7GnjZN">
+        <img src="https://yt3.ggpht.com/KyEQ1euunVgQroh2VIAp4fzvF5cbOFo98LARKoeatKMr_E6h6jyB6h9cv5HnM1C3EEwSoqRIUghf5Q" alt="Image 5">
+        <p>Basketball FRVR
+(Sports)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxMYb8szzWt5VeS7WoQoXGi1NE6p3GWsYM">
+        <img src="https://yt3.ggpht.com/JOvn0f_rvupGD3dKViKJcbR_Qal7Ljv8Mo6fBT0I5tnhZuzqK-FPM2ui-wKln0eAfkPSMDrAl4tymA" alt="Image 6">
+        <p>Bazooka Boy
+(Action)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    
+    <!-- Add more widget divs as needed -->
+      <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxgXYOIm4FNBLx2Pqcsm2uLVNL6-yY9JxN">
+        <img src="https://anshishere.w3spaces.com/block.png" alt="Image 6">
+        <p>BlockDrop
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxSxr2TP347bOmLco8gaPvBUwilDvO47Ys">
+        <img src="https://yt3.ggpht.com/435KaLnf2_7Ijp5rYs_LHSzIfhUnOMxyp90OCDAQJDN-rlxgua5C9hMT6CL81sFh7o9nKumE4yYBqg" alt="Image 6">
+        <p>Brain Out
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxtJBl0ZoeInS-4l5yzLRPqToF7zHv4dhr">
+        <img src="https://yt3.ggpht.com/8EqAG1-xaYWgPynx7gy2tQLwmLpYSXx5af8xDLIHyCwr1QOq3gh7MXuFqMj_Lecu3VZXNLN2gXDjpQ" alt="Image 6">
+        <p>Cannon Balls 3D
+(Arcade)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxDkt7KoEwDEyNjnIyq-8oz8_DLlriStjB">
+        <img src="https://anshishere.w3spaces.com/cotu.png" alt="Image 6">
+        <p>Cards of the Undead
+(RPG & Strategy)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxluYt1LEffJ0QagvP4KyKyrMeizA3XVe-">
+        <img src="https://carromclash.h5games.usercontent.goog/v/2c8af22a-0d67-4b42-a42c-09eca14632c4/high_res_tall.jpg" alt="Image 6">
+        <p>Carrom Clash
+(Sports)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxggiwgxQIFcmuCia130ZlskxLsXd8mTA3">
+        <img src="https://yt3.ggpht.com/AynS1UlQGN4rbJy2Vzmp3WrgYQXsqzeB7jn3Oq0AOCPvGhsckZ6al3zFEv95vImtEPAUF2xdMwqCjjQ" alt="Image 6">
+        <p>Chess Classic
+(Board & Card)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxsqrPhe4p8MCzJrgzC4SMrdU-WvUP9QV8">
+        <img src="https://yt3.ggpht.com/R3zm9nd9jQlqKxKNW_QWiUz81HtCncC3ZT7pctR6t6N9sok7l6wtcCWM5UxFBS4r7QJWccleYUlyJw" alt="Image 6">
+        <p>Collect Em All!
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxcobZM_stIxOBW-bQwKcrUiYbg11g4x55">
+        <img src="https://colorburst3d.h5games.usercontent.goog/v/f9ac46fc-3e68-4395-ab17-fe9b056df979/high_res_tall.jpg" alt="Image 6">
+        <p>Color Burst 3D
+(Arcade)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxK2uVzxmj4-7yUnbU8mSs0hX9XwdGZ_Pd">
+        <img src="https://yt3.ggpht.com/iYvVWh0hynudx5g48bX_SltKDBnoRsBepky39R_jc5cwDQ-nFM3a-UPoA-OdkESwyFA6v7Tuy3n7" alt="Image 6">
+        <p>Color Match
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxnOvRlIZp-uwV0MhCvN54gukpFctesXu9">
+        <img src="https://yt3.ggpht.com/f85oZm24n5o8Sek4KCzz53TKUrJOZ6WxFBcb9nqEkjlk9Pzgg2zu67NoSnBJodnuYuK6iEM6FEo9Rg" alt="Image 6">
+        <p>Color Page ASMR
+(Simulation)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxRscQl2OyLGa13m5LKa20ZKyA9nSDIPNM">
+        <img src="https://yt3.ggpht.com/OHk318RNDYfBDPVmOG7gscWhgDQXyLFKFqICkEcTUJYT2dgcGVPpl9N5BJL0Tt-cfKIfhYl3HgJkbb4" alt="Image 6">
+        <p>Color Pixel Art
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxwNjlSyEDGtKpOQAjA94Ck4LHXmF0qKCb">
+        <img src="https://yt3.ggpht.com/5EfQbu7HKZZXwcUtbLKnwXFuYUY6OIwvr_lPmGWx_KEptECGddZta0XQIZohuRhpUOWA2ezvJaDf" alt="Image 6">
+        <p>Crazy Caves
+(Arcade)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxuYWpNW2ZsLlrnGwOKwnKiLSbXUhMri29">
+        <img src="https://yt3.ggpht.com/D0zR9nuR6iML_r4BEJFW3Ye-oQQd0Z7TcHFLuPSC3BsVGYU6jqIWNyd9byvlARrDq95E_6akuzzpoQ" alt="Image 6">
+        <p>Cube Master 3D
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx2frULoOS6xBh8D0dZY6G9vvn5ODEzXpw">
+        <img src="https://cubetower.h5games.usercontent.goog/v/5liapjjns32tg/cubetower-thumb-tall2.png" alt="Image 6">
+        <p>Cube Tower
+(RPG & Strategy)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx2d5qQg5_Snq2mIm4BC1tyrHkdS_2daYs">
+        <img src="https://yt3.ggpht.com/Z0dwkR3QOO9U4ezCOLrS4vxiWYsZGMNHomjwMawFgGmdY7HxLvmKZv3Uq8Li9L8Zi9wfAMECKylmSZA" alt="Image 6">
+        <p>Cut The Rope
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxzLdK8NRUhAAcDeM7XKw-q9ePMo_tJ-Hp">
+        <img src="https://yt3.ggpht.com/eulaLGrnBW2NfrJxWT8bE4TFlX3_yUx6KJb55VFk6mm-EnW2UeDXlwjg-peHcP9N_TyFfP3ye-SGhZM" alt="Image 6">
+        <p>Daily Crossword
+(Brain & Puzzle)
+
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxb0tntcsC8v4im93WkkwRej9-_lE-TDx-">
+        <img src="https://yt3.ggpht.com/_FcD7DcXP3nzgBrLyoaU5nFTea0_ye6LJ9VHIXsO1x0Fjqli1Be00gtqlNGK6aODvfP5BmFDZpn9Xt4" alt="Image 6">
+        <p>Daily Solitaire
+(Board & Card)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxymTaeEEmPY8v-X36S3PtqbEy8v-m5f1f">
+        <img src="https://yt3.ggpht.com/tOJTN8z18OkQjRrHI5sKmlx09G9YfAYyBgHFVZPAS3GeaqYIN8AfbR9Kocer8UmPKliM3f7ZW3mxTw" alt="Image 6">
+        <p>DOP 4
+(Brain & Puzzle)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxYXA6kHXmgzTxbWijhtAfQUSRsipYkuKm">
+        <img src="https://yt3.ggpht.com/QdXAkY-VrhUghJeagY6YQbQPSvd_Bp07KVda-eI1a0d5ruAwGdIOl1pzHx5txIYAtS9WNzQnnHImLQ" alt="Image 6">
+        <p>Draw Climber
+(Racing)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxWwmO5vYaH02IwIlnLC1VDU6R09_v7yLX">
+        <img src="https://yt3.ggpht.com/yuEdROWDQVAUo2JD7-a2LhGpuKOgM6WB3Od8fCefh6qL1sQW7-eXG2eU8FEXECryI68w5zHDDAQRJuM" alt="Image 6">
+        <p>Element Blocks
+(Brain & Puzzle)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxWp38CScpoU0eFEvImoVEgu5alAcIiogA">
+        <img src="https://yt3.ggpht.com/-2HZvKUNJaulN-Gd_H6o7AJ0KgM-E6pZu-H2R_Sxu6Q_BcebYjpBJvN-8VlkJR5v6ktpyz1spd2SVP4" alt="Image 6">
+        <p>Endless Siege
+(RPG & Strategy)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxsk_eNi3xerLPa1SuoUIftBIWxzlTCbAN">
+        <img src="https://yt3.ggpht.com/-jo3IAizqBMQ07o8OJKohQmhFSm10Q3JxnmYhk4rHtRm1_owHR_rF24KacroWqzQ5PNqL-D7OaIE" alt="Image 6">
+        <p>Farm Land
+(Simulation)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxuDSpS3gp4pwkMxIxjbrQRs5gw9ZQE7ma">
+        <img src="https://yt3.ggpht.com/kkRpw8i0fjP3CI_VyVcuOiLP5tST1VhUL_d5BzXUdIzXjzwDaQETKioQj_L9MvYC3UFiW5o-l_9ewg" alt="Image 6">
+        <p>Find Out
+(Brain & Puzzle)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxbnpb-Zfu90iTv-d_1rZA5kUiiZwUz5U3">
+        <img src="https://yt3.ggpht.com/RVOqxqW7uzVFR3_yxvK4pmmtsKnEZw3Ym009ROG2-udg79w1VeqCP-xM1ckkA9hCraj_W3fRK3m03g" alt="Image 6">
+        <p>FreeCell Solitaire
+(Board & Card)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxCVbezWvZC9_zahVHoqGY5mmnLxHPVV7O">
+        <img src="https://ginrummy.h5games.usercontent.goog/v/799snd3tshod0/images/GinRummy-tall-banner.png" alt="Image 6">
+        <p>Gin Rummy
+(Board & Card)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxQvPWlcP28ralPqwsqWQoSImJT3tmYYv9">
+        <img src="https://yt3.ggpht.com/4-Al-XOdaQnqYoJJbPWQv5oHUMOXxcrQ57uJsQyvFM5GOngwnRKeMgNrUeeezzH2L-7FpSBYtGjwRQ" alt="Image 6">
+        <p>Gold Mahjong FRVR
+(Brain & Puzzle)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxSGzAGhudV_UETBagHlaIQOGSCFNmB6ZR">
+        <img src="https://idlerestaurants.h5games.usercontent.goog/v/0insiad70srn0/images/idle-restaurants-tall-banner.png" alt="Image 6">
+        <p>Idle Restaurants
+(Simulation)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxWFjPL7QK4ZTpxb948hkyFp3FYBWgyuUD">
+        <img src="https://yt3.ggpht.com/CV5P7KewoPEzfcZacODFE3PdieqBSGJ40lrR7jESuoBoHk9HWJvic1081Jk58GBY9NU1shCnym4G" alt="Image 6">
+        <p>Jewels Planet
+(Brain & Puzzle)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxR7Y74YsCcDK04Jggq9fDR2wRhviu8F9_">
+        <img src="https://yt3.ggpht.com/ryvaH5tHPtI_ZNCVSME9LnJfNb1M5FEHid6IbcRm3utUehDlphs4RLtLlVDvaWsbJ00OdvggWZXSGw" alt="Image 6">
+        <p>Knock'em All
+(Action)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxXYFhC4EXAVVe3iriSylT2ObmB8cuVnjT">
+        <img src="https://yt3.ggpht.com/1o5zpDuyiDs_etEPGMugKl7WEEXmSO8A2ef4fGdeGaovTOoijNUioNRUerfOsuuX1RX30oow2csaHA" alt="Image 6">
+        <p>Magic Cat Academy
+(Action)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxsIMTk6Iy34gx5WU30Bl_ofilD55Edub1">
+        <img src="https://yt3.ggpht.com/nGUsoDrkegutb43IsaoPQ2vjNNyoJCn9bclKaAeG26AWC3FYQJIzZtm_UYfaZ3RNT3EjYa2XS0Vr" alt="Image 6">
+        <p>Makeup Kit - Color Mixing
+(Simulation)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxDyVn-vpQ_a_zdREmvALXokbxh9ey9rTh">
+        <img src="https://mergeheroes.h5games.usercontent.goog/v/36gvbjc1ssukg/images/mergeheroes-tall-banner.png" alt="Image 6">
+        <p>Merge Heroes
+(RPG & Strategy)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx77Zleo4A6MThiMpKWLI4OuyvzMMoEv-p">
+        <img src="https://yt3.ggpht.com/Q1G7pY3TS9TNxDZO5fOAsaC10EMznD55VQFVQxXeYBG9vuHLQdfXcP5u3anIWdutlQtyajJM6Tjp" alt="Image 6">
+        <p>Merge Master
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx0f6kAG5TYHtcKtceb36RYt3ktJs23dyU">
+        <img src="https://mergepirates.h5games.usercontent.goog/v/c7817d47-cb1a-48cb-b1ff-ee2176545618/high_res_tall.jpg" alt="Image 6">
+        <p>Merge Pirates
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxkE_F3Vax51gnZbVhyiD-NdmIZYf5-dP5">
+        <img src="https://yt3.ggpht.com/ZHj7aVG9E_L2KXLvQCWcZ-SgZcsWQLsG8-hGikaO1LWNQlqdD0YJj30t7wrMDkeP-3G83DiibNgRoQ" alt="Image 6">
+        <p>Mob Control
+(Action)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx7rYBRO3K4pCUgGe7qy9U0xNn7od5Ogf1">
+        <img src="https://movingco.h5games.usercontent.goog/v/8fe98e0f-b1b7-4fc6-8023-200af0320f20/high_res_tall.jpg" alt="Image 6">
+        <p>Moving Co.
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx3dP_7oSzhOvhc-g2P3z5OPo55Im63OeH">
+        <img src="https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_tall.jpg" alt="Image 6">
+        <p>My Space Pet
+(Simulation)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxhUUpYndtiTolpGZWJ_qkpwQePIEhurnK">
+        <img src="https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_tall.jpg" alt="Image 6">
+        <p>Northern Heights
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxiSWh_UPnG4BImBX7gI3KVDLxT2Wm1PiJ">
+        <img src="https://yt3.ggpht.com/G_9KX8yNLFfAJznm1ug6u6R6kCvgeGUMw2mGj_-YJT4h-iY8Im4J-BszXw1Fsh4iIRVMTcNlxDIx7A" alt="Image 6">
+        <p>Om Nom Run
+(Arcade)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx3V-HDvjUWsG5X2Xu1-yFzl25wdw3sOjr">
+        <img src="https://yt3.ggpht.com/1ZPcGX3wPSdcm1mk2TZvLRbccXkAwJfNqyJjzueX0-KIbZu-Vs2_xVGoK_-AuBitLSqzftv5VBtywtU" alt="Image 6">
+        <p>Onet Connect Classic
+(Brain & Puzzle)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxWHqtW1FmHYXkDqChMiDHBk0yfbqSzW1N">
+        <img src="https://piratepop.h5games.usercontent.goog/v/cc76b73f-af86-4f22-abb6-33b02def4d32/high_res_tall.jpg" alt="Image 6">
+        <p>Pirate Pop
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxUWkNO5JdypVVA1xVMwYrdDNwfzMM5cZz">
+        <img src="https://pocketbattleroyale.h5games.usercontent.goog/v/7ku65naq8ktdg/MarketingAssets/pocketbattleroyale-thumb_tall-1080x1920.png" alt="Image 6">
+        <p>Pocket Battle Royale
+(Action)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxnDIbR1K0CiqEgJFWGNKq_2YlG8Au1Vxc">
+        <img src="https://pocketchampions.h5games.usercontent.goog/v/47dgni011hg0g/images/pocket-champions-tall-banner.png" alt="Image 6">
+        <p>Pocket Champions
+(Sports)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxARjhkMHAuyc5hdElO22cec1cTa4Cnkda">
+        <img src="https://yt3.ggpht.com/LQXgMy5R0Fle40aMhFHIjDYkVwY9o1N3Q6hEFCpchTpeQ8XzidJNsCqt_LJU69da_8kRwaVegzZPBg" alt="Image 6">
+        <p>Rainy Boba Cafe
+(Simulation)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxSn6arpQ-bwXk8YOEjg-y0JFVHzfucj16">
+        <img src="https://yt3.ggpht.com/1XXmXLhZM2_bpx_kjjdHkxMVllstQm_lefXR6oYQgllCTJhNAsBw4Ww0fUII8quCeqMPUNkcoswe" alt="Image 6">
+        <p>Running Pet Dec Room
+(Action)
+/p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxeIG5erzthQsBVVs1sCMhJTrLdLAb7v5c">
+        <img src="https://scooterxtreme.h5games.usercontent.goog/v/c842db43-7823-45bc-b575-acbd9bda5de4/high_res_tall.jpg" alt="Image 6">
+        <p>
+Scooter Xtreme - Racing - play Playable
+Scooter Xtreme
+(Racing)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxL3SoK1bXuffeVzvH1UPMHuz0YH2AYn_l">
+        <img src="https://yt3.ggpht.com/7EJIrw8vg6CLdrbTuz8M2bYjMuXiRzJ1ltL0ioZA0hOPNcMfGGncq_dZsW--9klKpbAnd0i5oi1Kow" alt="Image 6">
+        <p>Slice It All!
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxCPSyzGC7X7P8rw8sEmPuv82HB_nEXWt8">
+        <img src="https://slime-io.h5games.usercontent.goog/v/2hm4kteums0i8/MarketingAssets/SlimeIO_Thumb_Tall_1080x1920.png" alt="Image 6">
+        <p>Slime.io
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxHHtsak1SC8mRGHMZewc4HzeAY3yhPPmJ">
+        <img src="https://stackbounce.h5games.usercontent.goog/v/5dbb5964-61ff-403a-a319-6941e7867309/high_res_tall.jpg" alt="Image 6">
+        <p>Stack Bounce
+(Arcade)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxl5VAVrIKHF5GRmanrMwq2VtumP3V6uOw">
+        <img src="https://yt3.ggpht.com/FIJ0jE06Erdqk3ZhmsDcmecyYFmqoReVVjp6-SRODEX4AmlAlvnqvE1xvcYgdmlmGEKPoQWf9L8FzL0" alt="Image 6">
+        <p>State.io
+(Action)
+
+/p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxuu6Lk-sBMQPT2sliNGpkpCWPXx2sLf7q">
+        <img src="https://yt3.ggpht.com/nGfk7I_jL0_MBA0PFih8j8J6AOlMlxALWCDOkgWputmtGAlyp8H2OcupMsd5uYTM_V2A7Y2xIQ6LbQ" alt="Image 6">
+        <p>Super Goal
+(Sports)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxWYxG29y8GASEQHhWfPBFlUdwNwfCQEUK">
+        <img src="https://yt3.ggpht.com/y75kXNfCeZIwG5GSe-CS08VlgnWk5ksy_Kn4rWXJmzBFCQmchuYS88LsWJiR_NPgJNDA6nDHcKZpsw" alt="Image 6">
+        <p>Tall Man Run
+(Action)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx1T9fMq2OHnBplmPDP0-Ek68PskXdKiT8">
+        <img src="https://yt3.ggpht.com/FBaElwsAukOzKKkDyxh7Cot9wji-0cBox5kcivWyt8zkkW9-TW7rBRYwKzGTyPHS2F1Xcvyhwrniww" alt="Image 6">
+        <p>Tile Master®
+(Brain & Puzzle)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx50b0MgNtw5-tLByRcmclUYxr_TUmouLk">
+        <img src="https://yt3.ggpht.com/9d_a5Mne-hyh-8-h4XEXA6JNtBV13akkeGlb8z3XxXPqaozPs4eOfolqWI21S1YHk2Swu9TqFnij" alt="Image 6">
+        <p>Today's Hurdle
+(Trivia & Word)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxKXJt3Dp8gutdeca9P-UpEM3LLaeDffpa">
+        <img src="https://yt3.ggpht.com/aIgdPp4NP-yZ26lt20sj3-oGDxTMUrqHXex6LTrs1rga-UsGuMMmsObocRWAdfSMG0qqto6oB9fq0eU" alt="Image 6">
+        <p>Tomb of the Mask
+(Action)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkx8eqwWlf7fJiVSU7f7LL62Vp0cucAs3a-">
+        <img src="https://yt3.ggpht.com/v6fooKZ0CG-x3TrbnLtUMfxBioHzs7qdfCvB1-EV64lT_zEfW5nnewAfOsIZjti9THKuNL77wNbt4A" alt="Image 6">
+        <p>Turbo Stars
+(Racing)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/UgkxPFCtv4YicBUoaAB3qI5p2_k96YzBpj0x">
+        <img src="https://yt3.ggpht.com/vRrBD8VOgWmeLWyoR9jDgpxmwaXm-xMmacb5yr7NHdtiNB1cD261G5lxTypsW0Kbonfn_X5i9Ufe5A" alt="Image 6">
+        <p>Words of Wonders
+(Trivia & Word)
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://www.youtube.com/playables/Ugkxpz0Bcp4WK0ZLjhHhq2IrpxQmwmwB9md9">
+        <img src="https://yt3.ggpht.com/aIgdPp4NP-yZ26lt20sj3-oGDxTMUrqHXex6LTrs1rga-UsGuMMmsObocRWAdfSMG0qqto6oB9fq0eU" alt="Image 6">
+        <p>Words of Wonders: Guru
+(Trivia & Word)
+
+</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+    <div class="widget">
+      <a href="#" data-target="https://anshbooks.weebly.com">
+        <img src="https://anshishere.w3spaces.com/anshbooks.png" alt="Image 6">
+        <p>ANSH BOOKS</p>
+        <button class="play-button">Play Now</button>
+      </a>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>

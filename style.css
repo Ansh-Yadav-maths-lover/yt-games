@@ -1,0 +1,91 @@
+/* style.css */
+
+body {
+  background-color: #000; /* Set the background color to black */
+  background-size: cover; /* Adjust as needed */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.title-container {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin-top: 20px;
+  perspective: 1000px; /* Set the perspective value based on your preference */
+  transition: transform 0.3s ease-in-out;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.title:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.title:hover {
+  transform: translateZ(20px); /* Adjust the translateZ value for the desired perspective effect */
+}
+
+.widget {
+  width: calc(48% - 20px);
+  box-sizing: border-box;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  background-color: #F0F8FF;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.widget img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.widget p {
+  margin-top: auto;
+  font-weight: bold;
+}
+
+.widget .play-button {
+  padding: 5px 10px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.widget:hover {
+  transform: scale(1.05);
+  background-color: #D3E7FF;
+}
+
+.widget:hover .play-button {
+  background-color: #005F7F;
+}
