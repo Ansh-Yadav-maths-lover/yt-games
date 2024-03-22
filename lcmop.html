@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Image Carousel</title>
+</head>
+<body>
+
+  <div class="carousel">
+    <div class="slides">
+      <img src="https://wpcontent.techpout.com/techpout/wp-content/uploads/2020/03/25172043/Fast-Stone-Photo-Resizer.png" alt="Image 1" class="slide">
+      <img src="https://th.bing.com/th/id/OIP.5i5d58soKWxCbgOmkSCsqQHaHt?rs=1&pid=ImgDetMain" alt="Image 2" class="slide">
+      <img src="https://wpcontent.techpout.com/techpout/wp-content/uploads/2020/03/25172043/Fast-Stone-Photo-Resizer.png" alt="Image 3" class="slide">
+    </div>
+    <button class="prev-btn">&#10094;</button> 
+    <button class="next-btn">&#10095;</button> 
+    <div class="pagination">
+    </div>
+  </div>
+
+  <script>
+    // ... your existing JavaScript ... (no major changes required)
+    const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const slidesContainer = document.querySelector('.slides');
+
+let currentSlide = 0;
+
+function showSlide(slideIndex) {
+    slidesContainer.style.transform = `translateX(-${slideIndex * slides[0].offsetWidth}px)`;
+    currentSlide = slideIndex;
+    updatePagination(); 
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+
+function createPaginationDots() {
+    const pagination = document.querySelector('.pagination');
+    for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('pagination-dot');
+        dot.addEventListener('click', () => showSlide(i));
+        pagination.appendChild(dot);
+    }
+    pagination.children[0].classList.add('active');
+}
+
+function updatePagination() {
+    const dots = document.querySelectorAll('.pagination-dot');
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+// Initial setup
+showSlide(currentSlide);
+createPaginationDots();
+updatePagination();
+
+// Event listeners
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+  </script>
+
+  <style>
+    .carousel {
+      width: 95%;   /* Take up most screen width */
+      max-width: 600px; /* Limit maximum size */
+      margin: 20px auto; /* Smaller margin on mobile */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;  
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .slide {
+      width: 100%;      /* Full width for responsiveness */
+      max-width: 600px; /* Still limit maximum width */
+      flex-shrink: 0;
+      height: auto;     /* Maintain aspect ratio */
+      object-fit: cover; 
+    }
+
+    /* ... rest of your CSS ... */
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 480px) {
+      .carousel {
+        width: 98%; /* Adjusted width for smaller screens */
+      }
+
+      .slide {
+        height: 250px; /* Example height adjustment */
+      }
+
+      .prev-btn, .next-btn {
+        font-size: 20px; /* Slightly smaller arrows on very small screens*/
+      } 
+    }
+  </style>
+
+</body>
+</html>
